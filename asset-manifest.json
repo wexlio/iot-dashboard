@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/iot-dashboard/static/css/main.073c9b0a.css",
+    "main.js": "/iot-dashboard/static/js/main.e98ce22c.js",
+    "index.html": "/iot-dashboard/index.html",
+    "main.073c9b0a.css.map": "/iot-dashboard/static/css/main.073c9b0a.css.map",
+    "main.e98ce22c.js.map": "/iot-dashboard/static/js/main.e98ce22c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.e98ce22c.js"
+  ]
+}
