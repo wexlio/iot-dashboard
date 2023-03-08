@@ -2,7 +2,7 @@
   "name": "iot-dashboard",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://wexlio.github.io/iot-dashboard",
+  "homepage": "https://wexlio.github.io/iot-dashboard",
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
