@@ -9,8 +9,8 @@ export default function App() {
     <BrowserRouter>
       <Container>
         <Routes>
-          <Route exact path="/" element={<MostrarDatos />} />
-          <Route exact path="/esp32" element={<DataSimulation />} />
+          <Route path="/" element={<MostrarDatos />} />
+          <Route path="/esp32" element={<DataSimulation />} />
         </Routes>
       </Container>
     </BrowserRouter>
