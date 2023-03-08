@@ -25,7 +25,7 @@ export default function DataSimulation() {
 
     setLoading(true);
 
-    const response = await fetch("http://localhost:8080/api", {
+    const response = await fetch("https://iotserverdies.fly.dev/api", {
       method: "POST",
       body: JSON.stringify(task),
       headers: { "Content-type": "application/json" },
