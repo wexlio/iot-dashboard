@@ -13,7 +13,7 @@ import { useNavigate } from "react-router-dom";
 export default function DataSimulation() {
   const [task, setTask] = useState({
     title: "",
-    description: "",
+    description: ""
   });
 
   const [loading, setLoading] = useState(false);
