@@ -11,9 +11,19 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function DataSimulation() {
+
+    //urlLed = "https://iotserverdies.fly.dev/led"
+    //urlLed = "http://localhost:8080/led"
+
+    //urlMuestra = "https://iotserverdies.fly.dev/api"
+    const urlApi = "http://localhost:8080/api"
+
+    const [led, setLed] = useState(false)
+
   const [task, setTask] = useState({
     title: "",
-    description: ""
+    description: "",
+    led: led
   });
 
   const [loading, setLoading] = useState(false);
@@ -24,8 +34,8 @@ export default function DataSimulation() {
     e.preventDefault();
 
     setLoading(true);
-
-    const response = await fetch("https://iotserverdies.fly.dev/api", {
+    setLed(!led)
+    const response = await fetch(urlApi, {
       method: "POST",
       body: JSON.stringify(task),
       headers: { "Content-type": "application/json" },
@@ -40,7 +50,8 @@ export default function DataSimulation() {
   };
 
   const handleChange = (e) => {
-    setTask({ ...task, [e.target.name]: e.target.value });
+    setLed(!led)
+    setTask({ ...task, [e.target.name]: e.target.value, led: !led });
   };
 
   return (
